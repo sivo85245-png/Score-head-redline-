@@ -1,0 +1,22 @@
+<!doctype html><html lang="pt-BR"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Score Arena — dados experimentais</title><style>body{font:15px/1.6 Arial;margin:35px;color:#222}table{border-collapse:collapse;font-size:12px}td,th{border:1px solid #ccc;padding:8px;text-align:left}img{width:100%;max-width:1100px}pre{white-space:pre-wrap}.scroll{overflow:auto}</style>
+<h1>Score Arena — dados experimentais</h1><p>Execução iniciada em UTC: 2026-11-10T12:25:51.434407+00:00. Esta página contém medições; não é o relatório acadêmico.</p>
+<h2>Ambiente e método</h2><pre>{
+  &quot;python&quot;: &quot;3.12.14 (main, Aug 25 2026, 14:01:42) [MSC v.1944 64 bit (AMD64)]&quot;,
+  &quot;sistema&quot;: &quot;Windows-11-10.0.26200-SP0&quot;,
+  &quot;processador&quot;: &quot;Intel64 Family 6 Model 186 Stepping 2, GenuineIntel&quot;,
+  &quot;metodo&quot;: {
+    &quot;tempo&quot;: &quot;perf_counter; apenas ordenação; mediana de execuções sem instrumentação&quot;,
+    &quot;memoria&quot;: &quot;Uma execução separada por combinação: pico de alocações Python rastreadas por tracemalloc. Exclui entrada, cópia e validação; não é RSS do processo.&quot;,
+    &quot;entrada&quot;: &quot;Primeiros n registros originais, cópia nova em cada execução; CSV não alterado.&quot;,
+    &quot;aquecimento&quot;: &quot;Uma chamada por algoritmo com 100 registros antes de medir cada cenário/tamanho.&quot;,
+    &quot;ordem&quot;: &quot;Ordem dos algoritmos alternada entre repetições; garbage collector mantido habilitado.&quot;,
+    &quot;validacao&quot;: &quot;Ordem crescente e Counter dos pares (name, score) após cada execução.&quot;,
+    &quot;quick&quot;: &quot;Pivô central, três regiões, pilha explícita; diferente do pivô inicial da tabela do professor.&quot;,
+    &quot;escopo&quot;: &quot;Quick Sort e Heap Sort, conforme orientação específica do grupo informada pelo usuário.&quot;
+  }
+}</pre>
+<p>O pico medido não corresponde à memória total do programa. Os tempos de memória não são incluídos na mediana.</p>
+<h2>Resultados</h2><div class="scroll"><table><thead><tr><th>cenario</th><th>algoritmo</th><th>n</th><th>obrigatorio</th><th>mediana_s</th><th>min_s</th><th>max_s</th><th>pico_memoria_bytes</th><th>execucoes_memoria</th><th>validado</th></tr></thead><tbody><tr><td>Aleatório</td><td>Quick Sort</td><td>20000</td><td>True</td><td>0.05466369999339804</td><td>0.047823900007642806</td><td>0.05922269995789975</td><td>1624</td><td>1</td><td>True</td></tr><tr><td>Aleatório</td><td>Heap Sort</td><td>20000</td><td>True</td><td>0.08750919997692108</td><td>0.08004619996063411</td><td>0.1045358000556007</td><td>436</td><td>1</td><td>True</td></tr><tr><td>Quase ordenado</td><td>Quick Sort</td><td>20000</td><td>True</td><td>0.031064499984495342</td><td>0.023368699999991804</td><td>0.04797399998642504</td><td>1952</td><td>1</td><td>True</td></tr><tr><td>Quase ordenado</td><td>Heap Sort</td><td>20000</td><td>True</td><td>0.06771060003666207</td><td>0.06673129997216165</td><td>0.07661809999262914</td><td>436</td><td>1</td><td>True</td></tr><tr><td>Ordem inversa</td><td>Quick Sort</td><td>20000</td><td>True</td><td>0.04988069995306432</td><td>0.04409659997327253</td><td>0.05351279996102676</td><td>2048</td><td>1</td><td>True</td></tr><tr><td>Ordem inversa</td><td>Heap Sort</td><td>20000</td><td>True</td><td>0.06607820000499487</td><td>0.06565679999766871</td><td>0.08906839997507632</td><td>408</td><td>1</td><td>True</td></tr><tr><td>Muitas repetições</td><td>Quick Sort</td><td>20000</td><td>True</td><td>0.021260000008624047</td><td>0.01646339998114854</td><td>0.026322500023525208</td><td>992</td><td>1</td><td>True</td></tr><tr><td>Muitas repetições</td><td>Heap Sort</td><td>20000</td><td>True</td><td>0.06218310003168881</td><td>0.04538749996572733</td><td>0.06777530000545084</td><td>436</td><td>1</td><td>True</td></tr></tbody></table></div>
+<h2>Tempo</h2><img src="tempos.svg" alt="Gráfico de medianas em segundos"><h2>Memória</h2><img src="memoria.svg" alt="Gráfico de pico de memória auxiliar">
+<p>Tempos individuais, hashes dos arquivos e metadados completos: medicoes.json. Tabela para planilha: medicoes.csv.</p></html>

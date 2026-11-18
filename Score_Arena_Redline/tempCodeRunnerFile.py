@@ -1,0 +1,5 @@
+                    copia = original.copy()
+                    inicio = time.perf_counter()
+                    ALGORITMOS[nome](copia)
+                    tempos[nome].append(time.perf_counter() - inicio)
+                    validar(copia, referencia)

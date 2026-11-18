@@ -1,0 +1,191 @@
+{
+  "versao": 4,
+  "criado_em_utc": "2026-11-10T12:25:51.434407+00:00",
+  "python": "3.12.14 (main, Aug 25 2026, 14:01:42) [MSC v.1944 64 bit (AMD64)]",
+  "sistema": "Windows-11-10.0.26200-SP0",
+  "processador": "Intel64 Family 6 Model 186 Stepping 2, GenuineIntel",
+  "maquina": "AMD64",
+  "repeticoes": 3,
+  "tamanhos": [
+    20000
+  ],
+  "algoritmos": [
+    "Quick Sort",
+    "Heap Sort"
+  ],
+  "arquivos": [
+    {
+      "cenario": "Aleatório",
+      "arquivo": "4_player_scores_aleatoria.csv",
+      "sha256": "e5d3870c192dbe28cb0fab76f879108af1b355ff575c0d4d69e449d62bd8a0b4",
+      "registros": 20000
+    },
+    {
+      "cenario": "Quase ordenado",
+      "arquivo": "4_player_scores_quase_ordenada.csv",
+      "sha256": "d4dcf9fbff9ce24a7153173e853b56efe90b990dd1c77a7bce6d226e70b4ecb5",
+      "registros": 20000
+    },
+    {
+      "cenario": "Ordem inversa",
+      "arquivo": "4_player_scores_ordem_inversa.csv",
+      "sha256": "976e9f70cd1e6fd9d1932ad2515ebdb4b3f7eb0d817990a9011066436a67f83c",
+      "registros": 20000
+    },
+    {
+      "cenario": "Muitas repetições",
+      "arquivo": "4_player_scores_muitas_repeticoes.csv",
+      "sha256": "a81cc71dccf8980b1c7f69b49a20a9c9000b70a38d2cbd981d2f7af6010720b4",
+      "registros": 20000
+    }
+  ],
+  "resultados": [
+    {
+      "cenario": "Aleatório",
+      "algoritmo": "Quick Sort",
+      "n": 20000,
+      "obrigatorio": true,
+      "tempos_s": [
+        0.05922269995789975,
+        0.047823900007642806,
+        0.05466369999339804
+      ],
+      "mediana_s": 0.05466369999339804,
+      "min_s": 0.047823900007642806,
+      "max_s": 0.05922269995789975,
+      "pico_memoria_bytes": 1624,
+      "execucoes_memoria": 1,
+      "validado": true
+    },
+    {
+      "cenario": "Aleatório",
+      "algoritmo": "Heap Sort",
+      "n": 20000,
+      "obrigatorio": true,
+      "tempos_s": [
+        0.1045358000556007,
+        0.08750919997692108,
+        0.08004619996063411
+      ],
+      "mediana_s": 0.08750919997692108,
+      "min_s": 0.08004619996063411,
+      "max_s": 0.1045358000556007,
+      "pico_memoria_bytes": 436,
+      "execucoes_memoria": 1,
+      "validado": true
+    },
+    {
+      "cenario": "Quase ordenado",
+      "algoritmo": "Quick Sort",
+      "n": 20000,
+      "obrigatorio": true,
+      "tempos_s": [
+        0.04797399998642504,
+        0.031064499984495342,
+        0.023368699999991804
+      ],
+      "mediana_s": 0.031064499984495342,
+      "min_s": 0.023368699999991804,
+      "max_s": 0.04797399998642504,
+      "pico_memoria_bytes": 1952,
+      "execucoes_memoria": 1,
+      "validado": true
+    },
+    {
+      "cenario": "Quase ordenado",
+      "algoritmo": "Heap Sort",
+      "n": 20000,
+      "obrigatorio": true,
+      "tempos_s": [
+        0.06771060003666207,
+        0.07661809999262914,
+        0.06673129997216165
+      ],
+      "mediana_s": 0.06771060003666207,
+      "min_s": 0.06673129997216165,
+      "max_s": 0.07661809999262914,
+      "pico_memoria_bytes": 436,
+      "execucoes_memoria": 1,
+      "validado": true
+    },
+    {
+      "cenario": "Ordem inversa",
+      "algoritmo": "Quick Sort",
+      "n": 20000,
+      "obrigatorio": true,
+      "tempos_s": [
+        0.05351279996102676,
+        0.04409659997327253,
+        0.04988069995306432
+      ],
+      "mediana_s": 0.04988069995306432,
+      "min_s": 0.04409659997327253,
+      "max_s": 0.05351279996102676,
+      "pico_memoria_bytes": 2048,
+      "execucoes_memoria": 1,
+      "validado": true
+    },
+    {
+      "cenario": "Ordem inversa",
+      "algoritmo": "Heap Sort",
+      "n": 20000,
+      "obrigatorio": true,
+      "tempos_s": [
+        0.06607820000499487,
+        0.08906839997507632,
+        0.06565679999766871
+      ],
+      "mediana_s": 0.06607820000499487,
+      "min_s": 0.06565679999766871,
+      "max_s": 0.08906839997507632,
+      "pico_memoria_bytes": 408,
+      "execucoes_memoria": 1,
+      "validado": true
+    },
+    {
+      "cenario": "Muitas repetições",
+      "algoritmo": "Quick Sort",
+      "n": 20000,
+      "obrigatorio": true,
+      "tempos_s": [
+        0.026322500023525208,
+        0.021260000008624047,
+        0.01646339998114854
+      ],
+      "mediana_s": 0.021260000008624047,
+      "min_s": 0.01646339998114854,
+      "max_s": 0.026322500023525208,
+      "pico_memoria_bytes": 992,
+      "execucoes_memoria": 1,
+      "validado": true
+    },
+    {
+      "cenario": "Muitas repetições",
+      "algoritmo": "Heap Sort",
+      "n": 20000,
+      "obrigatorio": true,
+      "tempos_s": [
+        0.06777530000545084,
+        0.06218310003168881,
+        0.04538749996572733
+      ],
+      "mediana_s": 0.06218310003168881,
+      "min_s": 0.04538749996572733,
+      "max_s": 0.06777530000545084,
+      "pico_memoria_bytes": 436,
+      "execucoes_memoria": 1,
+      "validado": true
+    }
+  ],
+  "metodo": {
+    "tempo": "perf_counter; apenas ordenação; mediana de execuções sem instrumentação",
+    "memoria": "Uma execução separada por combinação: pico de alocações Python rastreadas por tracemalloc. Exclui entrada, cópia e validação; não é RSS do processo.",
+    "entrada": "Primeiros n registros originais, cópia nova em cada execução; CSV não alterado.",
+    "aquecimento": "Uma chamada por algoritmo com 100 registros antes de medir cada cenário/tamanho.",
+    "ordem": "Ordem dos algoritmos alternada entre repetições; garbage collector mantido habilitado.",
+    "validacao": "Ordem crescente e Counter dos pares (name, score) após cada execução.",
+    "quick": "Pivô central, três regiões, pilha explícita; diferente do pivô inicial da tabela do professor.",
+    "escopo": "Quick Sort e Heap Sort, conforme orientação específica do grupo informada pelo usuário."
+  },
+  "duracao_total_s": 5.651726299955044
+}

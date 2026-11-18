@@ -1,0 +1,53 @@
+{
+  "tipo": "Teste de correção, não benchmark",
+  "resultados": [
+    {
+      "cenario": "Aleatório",
+      "algoritmo": "Quick Sort",
+      "n": 20000,
+      "ordem_e_integridade": true
+    },
+    {
+      "cenario": "Aleatório",
+      "algoritmo": "Heap Sort",
+      "n": 20000,
+      "ordem_e_integridade": true
+    },
+    {
+      "cenario": "Quase ordenado",
+      "algoritmo": "Quick Sort",
+      "n": 20000,
+      "ordem_e_integridade": true
+    },
+    {
+      "cenario": "Quase ordenado",
+      "algoritmo": "Heap Sort",
+      "n": 20000,
+      "ordem_e_integridade": true
+    },
+    {
+      "cenario": "Ordem inversa",
+      "algoritmo": "Quick Sort",
+      "n": 20000,
+      "ordem_e_integridade": true
+    },
+    {
+      "cenario": "Ordem inversa",
+      "algoritmo": "Heap Sort",
+      "n": 20000,
+      "ordem_e_integridade": true
+    },
+    {
+      "cenario": "Muitas repetições",
+      "algoritmo": "Quick Sort",
+      "n": 20000,
+      "ordem_e_integridade": true
+    },
+    {
+      "cenario": "Muitas repetições",
+      "algoritmo": "Heap Sort",
+      "n": 20000,
+      "ordem_e_integridade": true
+    }
+  ]
+}
